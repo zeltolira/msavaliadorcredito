@@ -1,0 +1,29 @@
+2024-03-06T00:02:32.875-03:00  INFO 34348 --- [msavaliadorcredito] [restartedMain] c.l.m.MsavaliadorcreditoApplication      : Starting MsavaliadorcreditoApplication using Java 17.0.8 with PID 34348 (C:\Workspace\eureka\msavaliadorcredito\target\classes started by Zelto Lira in C:\Workspace\eureka\msavaliadorcredito)
+2024-03-06T00:02:32.890-03:00  INFO 34348 --- [msavaliadorcredito] [restartedMain] c.l.m.MsavaliadorcreditoApplication      : No active profile set, falling back to 1 default profile: "default"
+2024-03-06T00:02:33.008-03:00  INFO 34348 --- [msavaliadorcredito] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-03-06T00:02:33.008-03:00  INFO 34348 --- [msavaliadorcredito] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-03-06T00:02:36.830-03:00  INFO 34348 --- [msavaliadorcredito] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2024-03-06T00:02:36.855-03:00  INFO 34348 --- [msavaliadorcredito] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-06T00:02:36.855-03:00  INFO 34348 --- [msavaliadorcredito] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-06T00:02:36.988-03:00  INFO 34348 --- [msavaliadorcredito] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-06T00:02:36.989-03:00  INFO 34348 --- [msavaliadorcredito] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3978 ms
+2024-03-06T00:02:37.387-03:00  WARN 34348 --- [msavaliadorcredito] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'avaliadorCreditoController' defined in file [C:\Workspace\eureka\msavaliadorcredito\target\classes\com\lira\msavaliadorcredito\application\AvaliadorCreditoController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'avaliadorCreditoService' defined in file [C:\Workspace\eureka\msavaliadorcredito\target\classes\com\lira\msavaliadorcredito\application\AvaliadorCreditoService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'com.lira.msavaliadorcredito.infra.clients.ClienteResourseClient': Unexpected exception during bean creation
+2024-03-06T00:02:37.391-03:00  INFO 34348 --- [msavaliadorcredito] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-03-06T00:02:37.423-03:00  INFO 34348 --- [msavaliadorcredito] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-03-06T00:02:37.486-03:00 ERROR 34348 --- [msavaliadorcredito] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.lira.msavaliadorcredito.application.AvaliadorCreditoService required a bean of type 'org.springframework.cloud.openfeign.FeignContext' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.cloud.openfeign.FeignContext' in your configuration.
+
